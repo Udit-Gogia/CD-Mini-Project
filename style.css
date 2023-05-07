@@ -1,0 +1,202 @@
+@font-face {
+  font-family: Amulya-Bold;
+  src: url(./Fonts/Amulya/Fonts/OTF/Amulya-Bold.otf);
+}
+@font-face {
+  font-family: Amulya;
+  src: url(./Fonts/Amulya/Fonts/OTF/Amulya-Medium.otf);
+}
+@font-face {
+  font-family: Amulya-Reg;
+  src: url(./Fonts/Amulya/Fonts/OTF/Amulya-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#title h1 {
+  font-family: "Amulya";
+  font-weight: 600;
+  font-size: 5rem;
+  color: rgb(54, 69, 79);
+  margin: 1rem 0;
+  margin-bottom: 0.5rem;
+}
+#title h3 {
+  font-family: "Amulya";
+  color: rgb(54, 69, 79);
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+#developers {
+  padding: 2rem;
+}
+
+#developers h3,
+.program h3 {
+  font-family: "Amulya";
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+}
+
+#developers p {
+  font-family: "Amulya";
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-img {
+  pointer-events: none;
+}
+
+.program {
+  padding: 2rem;
+}
+
+.program h4 {
+  font-family: "Amulya-Reg";
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.notations {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.representation {
+  display: flex;
+}
+
+.textbox {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.textbox:focus {
+  outline: none;
+}
+.prefix-input {
+  border-radius: 5px;
+  border: 3px solid rgb(54, 69, 79);
+  width: fit-content;
+}
+.postfix-input {
+  border-radius: 5px;
+  border: 3px solid rgb(54, 69, 79);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.button {
+  display: inline-block;
+  border-radius: 0 1px 1px 0;
+  background-color: rgb(54, 69, 79);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 15rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#id {
+  font-size: rem;
+}
+
+.stack-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.command_group {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.stack-button {
+  padding: 2rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  outline: none;
+  border: 2px solid white;
+}
+
+@media (min-width: 300px) and (max-width: 1250px) {
+  .cards {
+    flex-direction: column;
+  }
+  .app {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1050px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .representation {
+    flex-direction: column;
+  }
+}

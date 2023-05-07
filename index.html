@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Infix to postfix</title>
+  <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<div id="title">
+  <h1>Stepwise representation of <span style="text-decoration: underline;">Infix to postfix</span> conversion</h1>
+  <h3>Compiler Design Mini Project</h3>
+</div>
+
+
+<section class="program">
+  <h3>The Application</h3>
+
+  <section class="app">
+
+    <div class="notations">
+      <section class="prefix">
+        <h4>Prefix notation</h4>  
+        <div class="prefix-input">
+          <input class="textbox" type="text" id="expression" value="a+b*(c+d)">
+          <button class="button" type="button" onclick="window.evaluate()">
+          <span>Evaluate</span> 
+          </button>  
+
+        </div>
+        
+      </section>
+  
+      <section class="postfix">
+        <h4>Postfix notation (output):</h4>
+        <input class="postfix-input" id="result_exp" value="" readonly>
+      </section>
+
+    </div>
+
+    <div class="representation">
+      <h3 id = "myArray"></h3>
+        <canvas id="myCanvas" width="240px" height="300px"></canvas>
+        <br>
+        
+        <div class="stack-control">
+          <div>
+              <p id="desc" style="font-size:2rem;width:20rem;height:10rem;text-align: center;"></p>
+          </div>
+      
+          <div class="command_group">
+            <button type="button" onclick="backward()" class="prev-button stack-button" style="background-color: #36454f!important;">
+              <img src="./Images/skip-back.svg" alt="play" width="25">
+              </button> 
+              
+            <button type="button" onclick="iterate()" class="play-button stack-button" style="background-color: #36454f!important;"> <img src="./Images/play.svg" alt="play" width="20"></button> 
+            <p id="info_iter" style="font-size:2rem;width:20rem"></p>  
+      
+        </div>
+
+        </div>
+    </div>
+    </section>
+</section>
+
+<section id="developers">
+  <h3>The Developers</h3>
+
+  <section class="cards">
+    <div>
+      <img src="./Images//ug.png" alt="ug" width="400" class="card-img">
+    </div>
+    <div>
+      <img src="./Images//ac.png" alt="ac" width="400" class="card-img">
+       
+    </div>
+    <div>
+      <img src="./Images//sp.png" alt="sp" width="400" class="card-img">
+        
+    </div>
+  </section>
+  
+</section>
+
+  
+ 
+  
+
+  
+</div>
+  
+<!-- 	<script type="text/paperscript" src="https://codepen.io/mehmetakifakkus/pen/dvygKZ.js" canvas="myCanvas"></script>	 -->
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
